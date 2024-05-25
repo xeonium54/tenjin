@@ -5,31 +5,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/styles.css" type="text/css" rel="stylesheet" />
         <title>preview</title>
     </head>
 
 
     <body id="page-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-3 mb-5 bg-body rounded" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#page-top"> <img style="width: 100px" src="./assets/img/landing/LOGO_BLACK.png" alt="tenjin logo"></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
+                <button data-mdb-button-init class="navbar-toggler navbar-toggler-right" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarResponsive" data-mdb-collapse-init
+                    data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                    <ul class="navbar-nav ms-auto fs-6">
+                        <li class="nav-item"><a class="nav-link" href="#about">All Product</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#collections">Collections</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Style</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Scrollwork</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">About Tenjin</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("mainNav").style.top = "0";
+            } else {
+                document.getElementById("mainNav").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+            }
+        </script>
 
         <div class="px-4 py-5 hero bg-image img-fluid justify-content-center align-self-center" >
             <div class="container px-4 px-lg-5 align-items-center justify-content-center">
@@ -43,7 +60,98 @@
                     </div>
                 </div>
             </div>
-
         </div>
+
+        <div class="container px-lg-2 py-auto" id="collections">
+            <div class="row">
+                <div class="p-4">
+                    <h1>Collections</h1>
+                </div>
+            </div>
+            <!-- <div class="row row-cols-1 row-cols-md-2 
+                    row-cols-lg-5 g-4"> 
+                <div class="col-6">
+                    <div class="card">
+                        <img src="./assets/img/landing/Style.jpg"  alt="..."
+                        style="width: 18rem">
+                        
+                        <div class="p-3 card-title">
+                            <h5>Styles</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="./assets/img/landing/Style.jpg"  alt="..." style="width: 18rem">
+                    
+                        <div class="p-3 card-title">
+                            <h5>Styles</h5>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <img src="./assets/img/landing/Style.jpg"  alt="..." style="width: 18rem">
+                    
+                        <div class="p-3 card-title">
+                            <h5>Styles</h5>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <img src="./assets/img/landing/Style.jpg"  alt="..." style="width: 18rem">
+                    
+                        <div class="p-3 card-title">
+                            <h5>Styles</h5>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <div class="row row-cols-1 row-cols-md-2 
+                    row-cols-lg-5 g-2">
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/img/landing/Style.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-0">
+                            <h5 class="card-title">Styles <i class="fa-thin fa-arrow-right" aria-hidden="true"></i> </h5>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/img/landing/artistic.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-0">
+                            <h5 class="card-title">Artistic line <i class="fa-thin fa-arrow-right"></i> </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/img/landing/basic.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-0">
+                            <h5 class="card-title">Basic Line <i class="fa-thin fa-arrow-right"></i> </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/img/landing/collab.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-0">
+                            <h5 class="card-title">Collaboration Line <i class="fa-thin fa-arrow-right"></i> </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./assets/img/landing/mousepad.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-0">
+                            <h5 class="card-title">Mousepad Line <i class="fa-thin fa-arrow-right"></i> </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        
     </body>
 </html>
