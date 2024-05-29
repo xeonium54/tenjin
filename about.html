@@ -55,72 +55,45 @@
         }
     </script>
 
-
-
-
-    <div class="container product-container" style="margin-top: 150px;">
-        <div class="row gx-5">
-            <div class="col-7 product-image">
-                <div id="container">
-                    <img src="../assets/img/product/Asanoha-Black1.jpg" class="zoom"  alt="Product Image">
-                </div>
+    <div class="container" style="margin-top: 90px">
+        <div class="row mb-3">
+            <div class="col">
+                <img class="w-75" style="margin-left: -13px; transform: translate(-20px,27px);" src="./assets/img/Scrollworks_and_Style-01_480x480.webp">
             </div>
-
-            <script>
-                const container = document.getElementById("container");
-                const img = document.querySelector(".zoom");
-
-                container.addEventListener("mousemove", onZoom);
-                container.addEventListener("mouseover", onZoom);
-                container.addEventListener("mouseleave", offZoom);
-
-                function onZoom(e) {
-                    const x = e.clientX - e.target.offsetLeft;
-                    const y = e.clientY - e.target.offsetTop;
-
-                    // console.log(x, y)
-
-                    img.style.transformOrigin = `${x}px ${y}px`;
-                    img.style.transform = "scale(1.5)";
-                }
-
-                function offZoom(e) {
-                    img.style.transformOrigin = `center center`;
-                    img.style.transform = "scale(1)";
-                }
-            </script>
-
-            <div class="col-4">
-                <p class="fw-lighter mb-0" style="font-size: 0.75rem;">TENJIN STYLE & SCROLLWORKS</p>
-                <h1 class="fw-semibold" >ASANOHA Black</h1>
-                <h5 class="fw-medium mb-1">$99.99 USD</h5>
-                <p class="fs-6 fw-lighter my-0">Tax included. Shipping calculated at checkout.</p>
-                <p class="fs-5 fw-lighter my-3">Stock: 10</p>
-
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3 btn-black w-100"
-                    style="--bs-btn-border-radius: 0.01rem; font-size: 1rem; --bs-btn-bg: transparent;
-                    --bs-btn-hover-bg: #8b8b8b; --bs-btn-color: #111; --bs-btn-border-color: #111">Add to Cart</button>
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3 btn-black w-100 mt-1"
-                    style="--bs-btn-border-radius: 0.01rem; font-size: 1rem; --bs-btn-bg: #202020; 
-                    --bs-btn-hover-bg: #c5c5c5; --bs-btn-hover-color: #111; --bs-btn-border-color: #111">All Product</button>
-
-                <p class="mt-4">
-                    Asanoha, the hemp leaves pattern of Japan, is well-known for its vigorous and seamless design, serving as our form of
-                    hope for a strong bond in the brand and community.
-                    
-                    Features:
-                    <ul>
-                        <li>90 x 40 x 0,4cm</li>
-                        <li>Smooth cloth top</li>
-                        <li>Stitched edges</li>
-                        <li>Rubber bottom, anti-slip</li>
-                        <li>Water-proof surface</li>
-                    </ul>
-
-                    * Images shown in the catalog are rendered. Actual products may present slight differences in appearance due to lighting
-                    conditions and other variables
-                    ** Shrinkage of ±1-2cm is within tolerance due to fabric & material process
-                </p>
+            <div class="col">
+                <img style="height: 85px; transform: translate(85%, 55px);" src="./assets/img/about2.png">
+            </div>
+            <div class="col">
+                <h2 style="text-align: right;" class="mt-5 fw-bold">STYLE & SCROLLWORK</h2>
+                <h4 style="text-align: right;" class="mb-5 fw-bold">スタイル・スクロール</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p> <strong>Tenjin</strong> is a Japanese-inspired brand specializing in deskmat artistry. Founded in 2021 as a collaborative prowess between
+                its founders, our brand is divided into two sub-brands: <strong>Scrollworks</strong> — specializing in deskmat lines, and <strong>Style</strong> —
+                offering merchandise derivatives.</p>
+            </div>
+            <div class="col">
+                
+                <h1 class="fw-semibold" style="font-size:6rem; margin-left: 700px; transform: rotate(90deg) translate(-70px, 705px);">ABOUT <br> TENJIN</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p> <strong>Our journey starts with a single vision:</strong> to elevate a staple desk accessory into a performance-enhancing piece of art.
+                Recognizing the lack of notable brands focused solely on this positioning, the idea for Tenjin</strong> was born.</p>
+            </div>
+            <div class="col">
+        
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p> <strong>Deeply rooted in Japanese culture and values, we proudly present you with the finest artistic deskmat collections.</strong></p>
+            </div>
+            <div class="col">
+                <img  class="w-100" style="transform: translate(0, -85%);" src="./assets/img/about.png">
             </div>
         </div>
     </div>
