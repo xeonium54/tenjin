@@ -137,7 +137,6 @@ body{
 .card:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
-
 }
 
 .carousel{
@@ -146,6 +145,12 @@ body{
   -moz-box-shadow: 2px 2px 24px 1px rgba(0,0,0,0.34);
 }
 
+.carousel-indicator button{
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
 footer{
   box-shadow: 2px 2px 24px 1px rgba(0, 0, 0, 0.631) inset;
 }
+
